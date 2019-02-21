@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient'
-import LinearTextGradient  from 'react-native-text-gradient';
+// import LinearTextGradient  from 'react-native-text-gradient';
 // create a component
 class Login extends Component {
 
