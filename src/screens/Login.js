@@ -37,6 +37,9 @@ class Login extends Component {
                         <TouchableOpacity style={styles.button}>
                             <Text style={{ fontSize: 30, padding: 6, color: '#FFFF' }}>Login</Text>
                         </TouchableOpacity>
+                        <TouchableOpacity style={styles.button}>
+                            <Text style={{ fontSize: 30, padding: 6, color: '#FFFF' }}>Login</Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </ScrollView>
