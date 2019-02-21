@@ -24,12 +24,16 @@ class Login extends Component {
                         </LinearGradient>
                     </View>
 
-                    <View style={{ flex: 1, justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'yellow' }} >
-                        <TextInput style={styles.textinput} placeholder='USERNAME' />
-                        <TextInput style={styles.textinput} placeholder='PASSWORD' />
+                    <View style={{ flex: .8,backgroundColor: 'yellow' }} >
+                        <View style={{ flex: 1, alignItems:'center',width:width }}>
+                            <TextInput style={styles.textinput} placeholder='USERNAME' />
+                        </View>
+                        <View style={{ flex: 1, alignItems:'center', width:width}}>
+                            <TextInput style={styles.textinput} placeholder='PASSWORD' />
+                        </View>
                     </View>
 
-                    <View style={{ flex: 1, paddingTop: 10, alignItems: 'center', width: width, backgroundColor: 'green' }}>
+                    <View style={{ flex: 1, paddingTop: 20, alignItems: 'center', width: width, backgroundColor: 'green' }}>
                         <TouchableOpacity style={styles.button}>
                             <Text style={{ fontSize: 30, padding: 6, color: '#FFFF' }}>Login</Text>
                         </TouchableOpacity>
@@ -56,8 +60,9 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.8, shadowColor: 'grey',
         borderBottomColor: '#4C64FF',
         borderBottomWidth: 1,
-        width: '90%',
         fontSize: 20,
+        width:'90%',
+      
     },
     button: {
         backgroundColor: '#17C8FF',
