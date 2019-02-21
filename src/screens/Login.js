@@ -24,7 +24,7 @@ class Login extends Component {
                         </LinearGradient>
                     </View>
 
-                    <View style={{ flex: 1, justifyContent: 'space-around', alignItems: 'center', backgroundColor: 'yellow' }} >
+                    <View style={{ flex: 1, alignItems: 'center', backgroundColor: 'yellow' }} >
                         <TextInput style={styles.textinput} placeholder='USERNAME' />
                         <TextInput style={styles.textinput} placeholder='PASSWORD' />
                     </View>
