@@ -11,7 +11,10 @@
     "react-native": "0.58.5",
     "react-native-firebase": "^5.2.2",
     "react-native-linear-gradient": "^2.5.3",
-    "react-native-text-gradient": "0.0.16"
+    "react-native-text-gradient": "0.0.16",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-form": "^8.1.0"
   },
   "devDependencies": {
     "babel-core": "7.0.0-bridge.0",
