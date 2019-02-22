@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+# platform :ios, '9.0'
 
 target 'IPM' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
@@ -7,11 +7,24 @@ target 'IPM' do
 
   # Pods for IPM
 
-  pod 'Firebase/Core'
-  
+  target 'IPM-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'IPMTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end
 
 target 'IPM-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for IPM-tvOS
+
   target 'IPM-tvOSTests' do
     inherit! :search_paths
     # Pods for testing

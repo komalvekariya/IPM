@@ -34,12 +34,14 @@ class Dashboard extends Component {
                     <Text style={{ flex: 1, fontSize: 25, marginHorizontal: 10,fontWeight: '900' }}>Status</Text>
                 </View>
                 <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', }}>
+
                     <FlatList
                         data={data.users}
                         // showsVerticalScrollIndicator={false}
                         renderItem={({ item }) =>
                             <TouchableOpacity>
                                 <View style={{ flexDirection: 'row', alignItems: 'center', borderBottomWidth: 3, borderBottomColor: '#333', marginVertical: 5, borderWidth: 1, padding: 5, marginHorizontal: 5 }}>
+
                                     <Text style={{ flex: 1.5, fontSize: 20, marginHorizontal: 20, fontWeight: 'bold', paddingVertical: 5 }}>{item.name}</Text>
                                     <Text style={item.status == 'Pending'
                                         ?
@@ -71,6 +73,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#FFF',
+
     },
     headerText: {
         fontSize: 30,
@@ -93,6 +96,7 @@ const styles = StyleSheet.create({
     },
     Pending: {
         color: '#3298FF'
+
     },
     Selected: {
         color: '#11c34c'
