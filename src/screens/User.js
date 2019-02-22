@@ -3,9 +3,15 @@ import React, { Component } from 'react';
 import { View, Text,TextInput, StyleSheet, FlatList, TouchableHighlight, TouchableOpacity,Button } from 'react-native';
 import { validate } from '../helper/validate';
 import { Field, reduxForm } from 'redux-form';
-//import Login from '../firebaseAuth'
+import {createUser, getUser} from '../helper/FirebaseUtils'
+import Login from '../firebaseAuth'
 // create a component
 class User extends Component {
+
+  async    componentDidMount(){
+      let test= await  getUser()
+      alert(JSON.stringify(test))
+    }
     render() {
 
         return (
@@ -16,7 +22,7 @@ class User extends Component {
                     title="helo"
                     style={{/* justifyContent:'flex-end', */alignItems:'flex-end'}}
                 />
-                {/* <Login></Login> */}
+                <Login></Login>
             </View>
 
         );
