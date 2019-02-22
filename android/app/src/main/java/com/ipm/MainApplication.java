@@ -6,6 +6,13 @@ import com.facebook.react.ReactApplication;
 import iyegoroff.RNTextGradient.RNTextGradientPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.auth.RNFirebaseAuthPackage;
+
+import com.horcrux.svg.SvgPackage;
+
+import iyegoroff.RNTextGradient.RNTextGradientPackage;
+
+import io.invertase.firebase.RNFirebasePackage;
+
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -30,7 +37,15 @@ public class MainApplication extends Application implements ReactApplication {
             new RNTextGradientPackage(),
             new RNFirebasePackage(),
             new LinearGradientPackage(),
-            new RNFirebaseAuthPackage()
+            new RNFirebaseAuthPackage(),
+
+            new SvgPackage(),
+
+            new RNTextGradientPackage(),
+
+            new RNFirebasePackage(),
+
+            new LinearGradientPackage()
       );
     }
 
