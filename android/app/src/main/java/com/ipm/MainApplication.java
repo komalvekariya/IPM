@@ -3,7 +3,11 @@ package com.ipm;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+<<<<<<< HEAD
 import iyegoroff.RNTextGradient.RNTextGradientPackage;
+=======
+import io.invertase.firebase.RNFirebasePackage;
+>>>>>>> master
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -25,7 +29,11 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+<<<<<<< HEAD
             new RNTextGradientPackage(),
+=======
+            new RNFirebasePackage(),
+>>>>>>> master
             new LinearGradientPackage()
       );
     }

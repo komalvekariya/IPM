@@ -40,7 +40,11 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
+<<<<<<< HEAD
 		7588D41A420A439D9DE09CB7 /* libRNTextGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECF369F5ED44B8B973382CF /* libRNTextGradient.a */; };
+=======
+		75EEAEB27EC84853A6DE4887 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 233595763CB64AEBA4201368 /* libRNFirebase.a */; };
+>>>>>>> master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -364,8 +368,13 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+<<<<<<< HEAD
 		09170E76DFE749E4B76269A5 /* RNTextGradient.xcodeproj */ = {isa = PBXFileReference; name = "RNTextGradient.xcodeproj"; path = "../node_modules/react-native-text-gradient/ios/RNTextGradient.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		2ECF369F5ED44B8B973382CF /* libRNTextGradient.a */ = {isa = PBXFileReference; name = "libRNTextGradient.a"; path = "libRNTextGradient.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+=======
+		353E11C16CD84CC593F1FB3D /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; name = "RNFirebase.xcodeproj"; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		233595763CB64AEBA4201368 /* libRNFirebase.a */ = {isa = PBXFileReference; name = "libRNFirebase.a"; path = "libRNFirebase.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+>>>>>>> master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,7 +404,11 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				968B7713577E4D74A27D4099 /* libBVLinearGradient.a in Frameworks */,
+<<<<<<< HEAD
 				7588D41A420A439D9DE09CB7 /* libRNTextGradient.a in Frameworks */,
+=======
+				75EEAEB27EC84853A6DE4887 /* libRNFirebase.a in Frameworks */,
+>>>>>>> master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +599,11 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				5D757D8E92F545ACB714E260 /* BVLinearGradient.xcodeproj */,
+<<<<<<< HEAD
 				09170E76DFE749E4B76269A5 /* RNTextGradient.xcodeproj */,
+=======
+				353E11C16CD84CC593F1FB3D /* RNFirebase.xcodeproj */,
+>>>>>>> master
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1241,7 +1258,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+<<<<<<< HEAD
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
+=======
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+>>>>>>> master
 				);
 				INFOPLIST_FILE = IPMTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1269,7 +1290,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+<<<<<<< HEAD
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
+=======
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+>>>>>>> master
 				);
 				INFOPLIST_FILE = IPMTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1298,7 +1323,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+<<<<<<< HEAD
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
+=======
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+>>>>>>> master
 				);
 				INFOPLIST_FILE = IPM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1321,7 +1350,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+<<<<<<< HEAD
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
+=======
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+>>>>>>> master
 				);
 				INFOPLIST_FILE = IPM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1351,7 +1384,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+<<<<<<< HEAD
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
+=======
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+>>>>>>> master
 				);
 				INFOPLIST_FILE = "IPM-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1387,7 +1424,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+<<<<<<< HEAD
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
+=======
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+>>>>>>> master
 				);
 				INFOPLIST_FILE = "IPM-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1422,7 +1463,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+<<<<<<< HEAD
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
+=======
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+>>>>>>> master
 				);
 				INFOPLIST_FILE = "IPM-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1457,7 +1502,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
+<<<<<<< HEAD
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
+=======
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+>>>>>>> master
 				);
 				INFOPLIST_FILE = "IPM-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

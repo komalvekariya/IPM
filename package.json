@@ -9,6 +9,7 @@
   "dependencies": {
     "react": "16.6.3",
     "react-native": "0.58.5",
+    "react-native-firebase": "^5.2.2",
     "react-native-linear-gradient": "^2.5.3",
     "react-native-text-gradient": "0.0.16",
     "react-redux": "^6.0.1",
