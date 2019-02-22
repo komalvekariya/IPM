@@ -1,14 +1,13 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TextInput, Dimensions, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Button ,Dimensions, ScrollView, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient'
 // create a component
 const { width, height } = Dimensions.get('window');
 class Login extends Component {
-
     render() {
         return (
-            <ScrollView>
+           
                 <View style={styles.container}>
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                         <LinearGradient
@@ -42,7 +41,8 @@ class Login extends Component {
                         </TouchableOpacity>
                     </View>
                 </View>
-            </ScrollView>
+            
+            
         );
     }
 }
@@ -53,9 +53,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         backgroundColor: '#FFFFFF',
-        width: width,
-        height: height,
-        justifyContent: 'center',
+        width:width,
+        height:height
 
     },
     headerText: {
