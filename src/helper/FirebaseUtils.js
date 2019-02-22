@@ -1,8 +1,8 @@
 import firebase from 'react-native-firebase'
 
 const FirebaseUtils = {
-    createUser: async (name,password) =>{
-        firebase.database().ref(`user ${name}`).set({name:"HarsHPatel1",password:"123456"})
+    createUser: async (name,password,email,type) =>{
+        firebase.database().ref(`user/ ${email}`).set({name:name,password:password,email:email,type:type})
     },
    getUser: async () =>{
     let universityRef = firebase.database().ref("user");

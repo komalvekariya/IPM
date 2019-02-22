@@ -14,21 +14,25 @@ class Dashboard extends Component {
         this.state = {
             status: 'All',
             ModalVisible: false,
-            data: []
+            datas: [],
+            datauser: []
         }
     }
-    SetGetData() {
-        await createUser('Harsh', '123456');
+    async componentDidMount() {
+        await createUser('Harsh2', '12345678',"admin2@admincom",'0');
         let test = await getUser()
         // alert(JSON.stringify(test))
-        this.setState({ data: test })
-        console.warn('data', this.state.data)
+        this.setState({ datas: test })
+        await this.setState({ datauser: data.users})
+        // console.warn('datas', datas)
     }
     onFilterClick(status) {
         this.setState({ status: status })
+        
     }
     render() {
-        console.warn('status', this.state.status)
+        console.warn('datas', this.state.datas)
+        console.warn('datauser', this.state.datauser)
 
         const shadowOpt = {
             width: 160,
@@ -99,7 +103,7 @@ class Dashboard extends Component {
                 </View>
                 <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', }}>
                     <FlatList
-                        data={data.users}
+                        data={this.state.datauser}
                         // showsVerticalScrollIndicator={false}
                         renderItem={({ item }) =>
                             <TouchableOpacity>
