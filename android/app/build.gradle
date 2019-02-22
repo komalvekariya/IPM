@@ -55,6 +55,8 @@ android {
 }
 
 dependencies {
+    implementation project(':react-native-svg')
+    implementation project(':react-native-text-gradient')
     implementation project(':react-native-firebase')
     implementation project(':react-native-linear-gradient')
     implementation fileTree(dir: "libs", include: ["*.jar"])

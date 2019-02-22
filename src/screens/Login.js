@@ -1,10 +1,12 @@
 //import liraries
 import React, { Component } from 'react';
+
 import { View, Text, StyleSheet, TextInput, Button ,Dimensions, ScrollView, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient'
 // create a component
 const { width, height } = Dimensions.get('window');
 class Login extends Component {
+
     render() {
         return (
            
@@ -53,6 +55,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         backgroundColor: '#FFFFFF',
+
         width:width,
         height:height
 
@@ -69,6 +72,7 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 4, height: 4 },
         shadowOpacity: 0.8, shadowColor: 'grey',
         borderBottomColor: '#4C64FF',
+
         borderBottomWidth: 1,
         fontSize: 20,
         width: '90%',
