@@ -13,7 +13,7 @@
     "react-native-linear-gradient": "^2.5.3",
     "react-native-shadow": "^1.2.2",
     "react-native-svg": "^9.2.4",
-    "react-native-text-gradient": "0.0.16"
+    "react-native-text-gradient": "0.0.16",
     "react-redux": "^6.0.1",
     "redux-form": "^8.1.0"
 
