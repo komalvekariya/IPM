@@ -52,6 +52,7 @@
 		FD27118B221FC3B1009097E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD27118A221FC3B1009097E5 /* GoogleService-Info.plist */; };
 
 		75EEAEB27EC84853A6DE4887 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 233595763CB64AEBA4201368 /* libRNFirebase.a */; };
+		65891DAFC34841E7A75EAAB6 /* libRNTextGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1AA70F02364C9CA4EAD0DB /* libRNTextGradient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -414,6 +415,8 @@
 
 		353E11C16CD84CC593F1FB3D /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; name = "RNFirebase.xcodeproj"; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		233595763CB64AEBA4201368 /* libRNFirebase.a */ = {isa = PBXFileReference; name = "libRNFirebase.a"; path = "libRNFirebase.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		27680202F4764AD1900C89CE /* RNTextGradient.xcodeproj */ = {isa = PBXFileReference; name = "RNTextGradient.xcodeproj"; path = "../node_modules/react-native-text-gradient/ios/RNTextGradient.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		5B1AA70F02364C9CA4EAD0DB /* libRNTextGradient.a */ = {isa = PBXFileReference; name = "libRNTextGradient.a"; path = "libRNTextGradient.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 
 /* End PBXFileReference section */
 
@@ -447,6 +450,7 @@
 				1D2783D982D14A81AEB1723D /* libRNTextGradient.a in Frameworks */,
 				693C21CB137C4EFFB917D34A /* libRNSVG.a in Frameworks */,
 				75EEAEB27EC84853A6DE4887 /* libRNFirebase.a in Frameworks */,
+				65891DAFC34841E7A75EAAB6 /* libRNTextGradient.a in Frameworks */,
 				F09954DE0EF05AA704529E95 /* libPods-IPM.a in Frameworks */,
 
 			);
@@ -663,6 +667,7 @@
 				E95AB9FB245242C5B4621189 /* RNTextGradient.xcodeproj */,
 				A33F1F7D398948EB9A2F56D9 /* RNSVG.xcodeproj */,
 				353E11C16CD84CC593F1FB3D /* RNFirebase.xcodeproj */,
+				27680202F4764AD1900C89CE /* RNTextGradient.xcodeproj */,
 
 			);
 			name = Libraries;
@@ -1423,7 +1428,6 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",					
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
 
 
@@ -1459,8 +1463,7 @@
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-
-
+					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
 				);
 				INFOPLIST_FILE = IPMTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1496,6 +1499,7 @@
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
 
 				);
 				INFOPLIST_FILE = IPM/Info.plist;
@@ -1563,7 +1567,7 @@
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-
+					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
 				);
 				INFOPLIST_FILE = "IPM-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1645,8 +1649,7 @@
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					
-
+					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
 				);
 				INFOPLIST_FILE = "IPM-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

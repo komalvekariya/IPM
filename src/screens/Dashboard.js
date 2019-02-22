@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity, Modal } from 'react-native';
 import * as data from '../demodata.json'
 import { BoxShadow } from 'react-native-shadow'
+import { createUser, getUser } from '../helper/FirebaseUtils'
+
+
 
 // create a component
 class Dashboard extends Component {
@@ -10,13 +13,23 @@ class Dashboard extends Component {
         super(props);
         this.state = {
             status: 'All',
-            ModalVisible: false
+            ModalVisible: false,
+            data: []
         }
+    }
+    SetGetData() {
+        await createUser('Harsh', '123456');
+        let test = await getUser()
+        // alert(JSON.stringify(test))
+        this.setState({ data: test })
+        console.warn('data', this.state.data)
     }
     onFilterClick(status) {
         this.setState({ status: status })
     }
     render() {
+        console.warn('status', this.state.status)
+
         const shadowOpt = {
             width: 160,
             height: 170,
@@ -29,7 +42,6 @@ class Dashboard extends Component {
             style: { marginVertical: 5 }
         }
         return (
-
             <View style={styles.container}>
                 {/* Modal start */}
                 <Modal
@@ -40,19 +52,22 @@ class Dashboard extends Component {
                         <View style={{ flex: 2, }}>
                             <TouchableOpacity
                                 style={{ flex: 1, backgroundColor: '#DDDDDD99' }}
-                                onPress={() => this.setState({ModalVisible: !this.state.ModalVisible}) }
+                                onPress={() => this.setState({ ModalVisible: !this.state.ModalVisible })}
                             ></TouchableOpacity>
                         </View>
                         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: 'red', flexDirection: 'column' }}>
                             <TouchableOpacity
+                                onPress={() => this.onFilterClick('All')}
                                 style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                                 <Text style={{ fontSize: 25, marginHorizontal: 10, fontWeight: '900' }}>All</Text>
                             </TouchableOpacity>
                             <TouchableOpacity
+                                onPress={() => this.onFilterClick('Pending')}
                                 style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                                 <Text style={{ fontSize: 25, marginHorizontal: 10, fontWeight: '900' }}>Pending</Text>
                             </TouchableOpacity>
                             <TouchableOpacity
+                                onPress={() => this.onFilterClick('Selected')}
                                 style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                                 <Text style={{ fontSize: 25, marginHorizontal: 10, fontWeight: '900' }}>Selected</Text>
                             </TouchableOpacity>
@@ -61,7 +76,9 @@ class Dashboard extends Component {
                 </Modal>
                 {/*   Modal End  */}
                 {/* <BoxShadow setting={shadowOpt}> */}
-                <TouchableOpacity style={styles.TouchableOpacityStyle} >
+                <TouchableOpacity style={styles.TouchableOpacityStyle}
+                    onPress={() => this.SetGetData()}
+                >
                     <Text style={{ fontSize: 30, fontWeight: '900' }}>+</Text>
                 </TouchableOpacity>
                 {/* </BoxShadow> */}
@@ -73,7 +90,7 @@ class Dashboard extends Component {
                     <Text style={{ flex: 1, fontSize: 25, marginHorizontal: 20, fontWeight: '900' }}>Name</Text>
                     <TouchableOpacity
                         style={{ flexDirection: 'row', flex: 1, alignItems: 'center' }}
-                        onPress={() => this.setState({ModalVisible: true}) }
+                        onPress={() => this.setState({ ModalVisible: true })}
 
                     >
                         <Text style={{ fontSize: 25, marginHorizontal: 10, fontWeight: '900' }}>Status</Text>
@@ -81,7 +98,6 @@ class Dashboard extends Component {
                     </TouchableOpacity>
                 </View>
                 <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', }}>
-
                     <FlatList
                         data={data.users}
                         // showsVerticalScrollIndicator={false}
@@ -106,7 +122,6 @@ class Dashboard extends Component {
                         keyExtractor={item => item.status}
                     />
                 </View>
-
             </View>
 
         );

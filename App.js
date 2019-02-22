@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
-import {  StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import Login from './src/screens/Login'
 import Dashboard from './src/screens/Dashboard'
 
@@ -10,7 +9,10 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Dashboard />
+        {/* <ScrollView> */}
+          <Dashboard />
+          {/* <Login /> */}
+        {/* </ScrollView> */}
       </View>
     );
   }
@@ -18,8 +20,8 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
-    
+    flex: 1,
+
   },
 
 });

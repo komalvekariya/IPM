@@ -3,13 +3,12 @@ package com.ipm;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-
-import com.horcrux.svg.SvgPackage;
-
 import iyegoroff.RNTextGradient.RNTextGradientPackage;
-
 import io.invertase.firebase.RNFirebasePackage;
+import io.invertase.firebase.auth.RNFirebaseAuthPackage;
 
+import io.invertase.firebase.database.RNFirebaseDatabasePackage;
+import com.horcrux.svg.SvgPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -31,14 +30,12 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-
-            new SvgPackage(),
-
             new RNTextGradientPackage(),
-
             new RNFirebasePackage(),
-
-            new LinearGradientPackage()
+            new LinearGradientPackage(),
+            new RNFirebaseAuthPackage(),
+            new RNFirebaseDatabasePackage(),
+            new SvgPackage()
       );
     }
 
