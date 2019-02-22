@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -45,6 +44,9 @@
 		CED1C2F03AB2415CBB038D63 /* libRNTextGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5ABC3693A04DDEB3A250D5 /* libRNTextGradient.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
+		1D2783D982D14A81AEB1723D /* libRNTextGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B1179FDF2E437CA514D240 /* libRNTextGradient.a */; };
+		693C21CB137C4EFFB917D34A /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1D79307A9548848D34FBED /* libRNSVG.a */; };
+		FB106CC7412E400C9452D23F /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4461315D519F479E8B735683 /* libRNSVG-tvOS.a */; };
 
 		F09954DE0EF05AA704529E95 /* libPods-IPM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 106CB54CD073C2DF9B56A50D /* libPods-IPM.a */; };
 		FD27118B221FC3B1009097E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD27118A221FC3B1009097E5 /* GoogleService-Info.plist */; };
@@ -401,6 +403,12 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 
+		E95AB9FB245242C5B4621189 /* RNTextGradient.xcodeproj */ = {isa = PBXFileReference; name = "RNTextGradient.xcodeproj"; path = "../node_modules/react-native-text-gradient/ios/RNTextGradient.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		D3B1179FDF2E437CA514D240 /* libRNTextGradient.a */ = {isa = PBXFileReference; name = "libRNTextGradient.a"; path = "libRNTextGradient.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		A33F1F7D398948EB9A2F56D9 /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		2D1D79307A9548848D34FBED /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		4461315D519F479E8B735683 /* libRNSVG-tvOS.a */ = {isa = PBXFileReference; name = "libRNSVG-tvOS.a"; path = "libRNSVG-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+
 		FD27118A221FC3B1009097E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FD27119A221FC593009097E5 /* IPM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IPM-Bridging-Header.h"; sourceTree = "<group>"; };
 
@@ -436,10 +444,10 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				968B7713577E4D74A27D4099 /* libBVLinearGradient.a in Frameworks */,
-
-				7588D41A420A439D9DE09CB7 /* libRNTextGradient.a in Frameworks */,
-
+				1D2783D982D14A81AEB1723D /* libRNTextGradient.a in Frameworks */,
+				693C21CB137C4EFFB917D34A /* libRNSVG.a in Frameworks */,
 				75EEAEB27EC84853A6DE4887 /* libRNFirebase.a in Frameworks */,
+				F09954DE0EF05AA704529E95 /* libPods-IPM.a in Frameworks */,
 
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -652,8 +660,8 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				5D757D8E92F545ACB714E260 /* BVLinearGradient.xcodeproj */,
 
-				09170E76DFE749E4B76269A5 /* RNTextGradient.xcodeproj */,
-
+				E95AB9FB245242C5B4621189 /* RNTextGradient.xcodeproj */,
+				A33F1F7D398948EB9A2F56D9 /* RNSVG.xcodeproj */,
 				353E11C16CD84CC593F1FB3D /* RNFirebase.xcodeproj */,
 
 			);
@@ -1198,7 +1206,7 @@
 		FD416566221D698A00998847 /* libjsi-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libjsi-tvOS.a";
+			path = "libjsi-tvOS.a";<<<<<<< harsh-patel
 			remoteRef = FD416565221D698A00998847 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1412,6 +1420,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",					
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
 
 
@@ -1445,8 +1457,9 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
-
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+
 
 				);
 				INFOPLIST_FILE = IPMTests/Info.plist;
@@ -1481,7 +1494,7 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
-
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 
 				);
@@ -1511,10 +1524,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
-
-					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",					
 
 				);
 				INFOPLIST_FILE = IPM/Info.plist;
@@ -1548,9 +1560,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
-
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 
 				);
@@ -1592,8 +1603,8 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
-
-					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",					
 
 				);
 				INFOPLIST_FILE = "IPM-tvOS/Info.plist";
@@ -1631,10 +1642,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
-
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					
 
 				);
 				INFOPLIST_FILE = "IPM-tvOSTests/Info.plist";
@@ -1660,7 +1671,7 @@
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 543CE116D73F2CA18A028C17 /* Pods-IPM-tvOSTests.release.xcconfig */;
-			buildSettings = {
+			buildSetings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1672,10 +1683,9 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
-
 					"$(SRCROOT)/../node_modules/react-native-text-gradient/ios/**",
-
-					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",			
 
 				);
 				INFOPLIST_FILE = "IPM-tvOSTests/Info.plist";
