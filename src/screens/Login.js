@@ -17,23 +17,23 @@ class Login extends Component {
                             style={{ justifyContent: 'center', alignItems: 'center', width: '81%', flex: 0.4 }}
                         >
                             <View style={{ backgroundColor: 'white', width: '97%', justifyContent: 'center', alignItems: 'center', flex: .9 }}>
-                                <Text style={{ fontSize: 40, fontWeight: "bold", color: '#6536FF', shadowOffset: { width: 5, height: 5 }, shadowColor: 'grey', shadowOpacity: 0.3, }}>
+                                <Text style={styles.headerText}>
                                     IPM
                             </Text>
-                            </View>
+                            </View>s
                         </LinearGradient>
                     </View>
 
-                    <View style={{ flex: .8,backgroundColor: 'yellow' }} >
-                        <View style={{ flex: 1, alignItems:'center',width:width }}>
+                    <View style={{ flex: .8 }} >
+                        <View style={{ flex: 1, alignItems: 'center', width: width }}>
                             <TextInput style={styles.textinput} placeholder='USERNAME' />
                         </View>
-                        <View style={{ flex: 1, alignItems:'center', width:width}}>
+                        <View style={{ flex: 1, alignItems: 'center', width: width }}>
                             <TextInput style={styles.textinput} placeholder='PASSWORD' />
                         </View>
                     </View>
 
-                    <View style={{ flex: 1, paddingTop: 20, alignItems: 'center', width: width, backgroundColor: 'green' }}>
+                    <View style={{ flex: 1, paddingTop: 20, alignItems: 'center', width: width }}>
                         <TouchableOpacity style={styles.button}>
                             <Text style={{ fontSize: 30, padding: 6, color: '#FFFF' }}>Login</Text>
                         </TouchableOpacity>
@@ -58,14 +58,21 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
 
     },
+    headerText: {
+        fontSize: 40,
+        fontWeight: "bold",
+        color: '#6536FF',
+        shadowOffset: { width: 5, height: 5 },
+        shadowColor: 'grey',
+        shadowOpacity: 0.3,
+    },
     textinput: {
         shadowOffset: { width: 4, height: 4 },
         shadowOpacity: 0.8, shadowColor: 'grey',
         borderBottomColor: '#4C64FF',
         borderBottomWidth: 1,
         fontSize: 20,
-        width:'90%',
-      
+        width: '90%',
     },
     button: {
         backgroundColor: '#17C8FF',
