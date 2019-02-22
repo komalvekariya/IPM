@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "516478091450",
+    "firebase_url": "https://inrerview-process-management.firebaseio.com",
+    "project_id": "inrerview-process-management",
+    "storage_bucket": "inrerview-process-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516478091450:android:7d14a88bc7311d20",
+        "android_client_info": {
+          "package_name": "com.ipm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516478091450-aab8erod9tlojcueh1ckqhpt017i68aj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKuwwxLc0VQsg9-138KsL0jaDNw2T1CsQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
